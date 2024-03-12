@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var a,b,c,triangle,nan;
+        a= prompt("Please enter the length of a side:");
+        b= prompt("Please enter the length of another side:");
+        c= prompt("Please enter the length of another side:");
+        determineTriangle(a,b,c);
+        determineisNaN(a,b,c);
+
+        parseInt(a);
+        parseInt(b);
+        parseInt(c);
+
+        function determineisNaN(a,b,c){
+           if (isNaN(a),isNaN(b),isNaN(c)){
+               alert("Those are not numbers.");
+           return}
+       }
+
+        function determineTriangle(a,b,c){
+            if (a==b&&a==c) {
+                window.alert("Your triangle is an EQUILATERAL triangle!");} 
+             else if (a==b || b==c || c==a) {
+                window.alert("Your triangle is an ISOSCELES triangle!");} 
+            else {
+                window.alert("Your triangle is a SCALENE trangle!");}
+}
+
+ </script>
+</body>
+</html>
